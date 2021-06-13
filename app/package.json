@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup --config",
-    "test": "svelte-check"
+    "lint": "svelte-check && eslint ."
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,9 @@
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-typescript": "^8.2.1",
     "@tsconfig/svelte": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "eslint": "^7.28.0",
     "rollup": "^2.51.2",
     "rollup-plugin-svelte": "^7.1.0",
     "svelte": "^3.38.2",
