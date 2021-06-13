@@ -1,5 +1,7 @@
 {
-    "eslint.workingDirectories": [
-        { "mode": "auto" }
-    ]
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "files.associations": {
+    "*.svelte": "html"
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "html"]
 }
