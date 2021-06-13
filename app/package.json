@@ -4,6 +4,7 @@
   "description": "Simple roguelike that runs in a browser",
   "main": "index.js",
   "scripts": {
+    "build": "rollup --config",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ojeytonwilliams/roguelike/issues"
   },
-  "homepage": "https://github.com/ojeytonwilliams/roguelike#readme"
+  "homepage": "https://github.com/ojeytonwilliams/roguelike#readme",
+  "devDependencies": {
+    "rollup": "^2.51.2"
+  }
 }
