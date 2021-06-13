@@ -1,12 +1,18 @@
 import svelte from "rollup-plugin-svelte";
 import resolve from "@rollup/plugin-node-resolve";
+import autoPreprocess from "svelte-preprocess";
+import typescript from "@rollup/plugin-typescript";
 
 export default {
-  input: "src/main.js",
+  input: "src/main.ts",
   output: {
     file: "public/bundle.js",
     format: "iife",
-    name: "main"
+    name: "main",
   },
-  plugins: [svelte(), resolve({ browser: true })],
+  plugins: [
+    svelte({ preprocess: autoPreprocess() }),
+    typescript(),
+    resolve({ browser: true }),
+  ],
 };
