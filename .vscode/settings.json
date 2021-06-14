@@ -3,5 +3,5 @@
   "files.associations": {
     "*.svelte": "html"
   },
-  "eslint.validate": ["javascript", "javascriptreact", "html"]
+  "eslint.validate": ["javascript", "javascriptreact", "html", "typescript"]
 }
