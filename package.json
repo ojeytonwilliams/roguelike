@@ -34,6 +34,7 @@
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.1",
+    "prettier-plugin-svelte": "^2.3.0",
     "rollup": "^2.51.2",
     "rollup-plugin-svelte": "^7.1.0",
     "svelte": "^3.38.2",
