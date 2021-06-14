@@ -1,5 +1,9 @@
 module.exports = {
   root: true,
+  env: {
+    es2021: true,
+    browser: true
+  },
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "svelte3"],
   overrides: [
