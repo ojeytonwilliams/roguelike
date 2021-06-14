@@ -4,9 +4,9 @@ import autoPreprocess from "svelte-preprocess";
 import typescript from "@rollup/plugin-typescript";
 
 export default {
-  input: "src/main.ts",
+  input: "app/src/main.ts",
   output: {
-    file: "public/bundle.js",
+    file: "app/public/bundle.js",
     format: "iife",
     name: "main",
   },
