@@ -12,7 +12,7 @@ export default {
   },
   plugins: [
     svelte({ preprocess: autoPreprocess() }),
-    typescript(),
+    typescript({ tsconfig: "./app/tsconfig.json" }),
     resolve({ browser: true }),
   ],
 };
