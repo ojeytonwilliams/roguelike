@@ -2,6 +2,7 @@
   "extends": "@tsconfig/svelte/tsconfig.json",
   "include": ["src/**/*"],
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "target": "ES2021"
   }
 }
