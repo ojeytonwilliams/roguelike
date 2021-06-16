@@ -4,13 +4,13 @@ import autoPreprocess from "svelte-preprocess";
 import typescript from "@rollup/plugin-typescript";
 import { babel } from "@rollup/plugin-babel";
 import commonjs from "rollup-plugin-commonjs";
+import livereload from "rollup-plugin-livereload";
 
 export default {
   input: "app/src/main.ts",
   output: {
     file: "app/public/bundle.js",
     format: "iife",
-    name: "main",
   },
   plugins: [
     svelte({ preprocess: autoPreprocess() }),
@@ -25,5 +25,6 @@ export default {
       // about supporting older browsers that's necessary.  I should revisit this when it's more
       // than a toy app. https://github.com/obahareth/are-you-es5 might help!
     }),
+    livereload(),
   ],
 };
